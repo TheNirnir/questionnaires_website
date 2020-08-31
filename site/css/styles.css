@@ -1,0 +1,26 @@
+#footer {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	border: none;
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+}
+
+#footer-container {
+	background-color: #d1d1d1;
+	width: 100;
+	margin: 0;
+	padding-bottom: 20px;
+}
+
+#footer div {
+	text-align: center;
+}
+
+#footer-wave {
+	width: 100%;
+	height: 100%;
+}
