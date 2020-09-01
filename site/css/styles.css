@@ -4,6 +4,8 @@ body {
 
 .navbar {
 	border: none;
+	background-color: #124f6b;
+	padding: 0;
 }
 
 #header-bigger-container {
