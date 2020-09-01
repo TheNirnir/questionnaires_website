@@ -1,3 +1,32 @@
+.navbar {
+	border: none;
+}
+
+#header-bigger-container {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#header-container {
+	float: none;
+	text-align: center;
+	background-color: #124f6b;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#header-container h1 {
+	font-weight: bold;
+	color: #9fd0ed;
+	margin-top: 30px;
+}
+
+#header-wave {
+	width: 100%;
+}
+
 #footer {
 	position: fixed;
 	bottom: 0;
@@ -11,7 +40,7 @@
 
 #footer-container {
 	background-color: #d1d1d1;
-	width: 100;
+	width: 100%;
 	margin: 0;
 	padding-bottom: 20px;
 }
