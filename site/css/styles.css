@@ -4,8 +4,9 @@ body {
 
 .navbar {
 	border: none;
-	background-color: #124f6b;
-	padding: 0;
+	line-height: 0;
+	/*background-color: #124f6b;*/
+	/*padding: 0;*/
 }
 
 #header-bigger-container {
@@ -31,6 +32,7 @@ body {
 
 #header-wave {
 	width: 100%;
+
 }
 
 #footer {
@@ -41,7 +43,8 @@ body {
 	border: none;
 	padding: 0;
 	margin: 0;
-	background-color: #9fd0ed;
+	background-color: #f0ffff;
+	line-height: 0;
 }
 
 #footer-container {
@@ -49,10 +52,12 @@ body {
 	width: 100%;
 	margin: 0;
 	padding-bottom: 20px;
+	line-height: 1.45;
 }
 
 #footer div {
 	text-align: center;
+	color: #124f6b;
 }
 
 #footer-wave {
