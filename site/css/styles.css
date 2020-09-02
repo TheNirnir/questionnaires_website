@@ -34,7 +34,17 @@ body {
 	width: 100%;
 
 }
+/*****************end of header*********************/
 
+#buttons-row {
+	width: 100%;
+}
+
+#buttons-row img {
+	width: 100%;
+}
+
+/*****************footer*********************/
 #footer {
 	position: fixed;
 	bottom: 0;
