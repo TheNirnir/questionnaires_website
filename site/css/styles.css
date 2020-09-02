@@ -38,11 +38,11 @@ body {
 
 /*#buttons-row {
 	width: 100%;
-}
+}*/
 
 #buttons-row img {
-	width: 100%;
-}*/
+	margin-bottom: 30px;
+}
 
 /*****************footer*********************/
 #footer {
