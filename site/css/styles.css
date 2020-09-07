@@ -40,8 +40,156 @@ body {
 	width: 100%;
 }*/
 
-#buttons-row img {
+/*#buttons-row img {
 	margin-bottom: 30px;
+}*/
+
+/*#buttons-row .for-padding {
+	padding: 15px;
+}
+
+#buttons-row .for-padding div {
+	background-color: #d1d1d1;
+	border-radius: 20px;
+	text-align: center;
+	padding: 10px;
+	transition: 1.5s background-color;
+	cursor: pointer;
+}
+
+#buttons-row .for-padding div:hover, #buttons-row .for-padding div:active {
+	background-color: #000;
+}
+
+#buttons-row div h3 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-weight: bold;
+	color: #000;
+	transition: 0.8s color;
+}
+
+#buttons-row div span {
+	font-weight: bold;
+	color: #000;
+	transition: 0.8s color;
+}
+
+#buttons-row .for-padding div:hover h3, #buttons-row .for-padding div:active h3 {
+	color: #fff;
+}
+
+#buttons-row .for-padding div:hover span, #buttons-row .for-padding div:active span {
+	color: #fff;
+}*/
+
+/*#buttons-row .for-padding {
+	padding: 15px;
+}
+
+#buttons-row .for-padding div {
+	background-image: url(../images/websiteRound_gray.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	width: 100%;
+
+	text-align: center;
+	padding: 20px;
+	transition: 1.5s background-image;
+	cursor: pointer;
+}
+
+#buttons-row .for-padding div:hover, #buttons-row .for-padding div:active {
+	background-image: url(../images/websiteFlower_gray.png);
+}
+
+#buttons-row div h3 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-weight: bold;
+	color: #000;
+}
+
+#buttons-row div span {
+	font-weight: bold;
+	color: #000;
+}*/
+
+#buttons-row .for-padding {
+	padding: 15px;
+}
+
+#buttons-row .for-padding div {
+	text-align: center;
+	padding: 20px;
+	cursor: pointer;
+	border: 5px solid #d1d1d1;
+	transition: 0.7s border-color;
+}
+
+#buttons-row > div {
+	position: relative;
+}
+
+.hide-border-1, .hide-border-3 {
+	width: 50%;
+	height: 5px;
+	background-color: #f0ffff;
+	position: absolute;
+	transition: 0.7s width;
+}
+
+.hide-border-1 {
+	right: 25%;
+	top: 15px;
+}
+
+.hide-border-3 {
+	left: 25%;
+	bottom: 15px;
+}
+
+.hide-border-2, .hide-border-4 {
+	width: 5px;
+	height: 50%;
+	background-color: #f0ffff;
+	position: absolute;
+	transition: 0.7s height;
+}
+
+.hide-border-2 {
+	bottom: 25%;
+	right: 15px;
+}
+
+.hide-border-4 {
+	top: 25%;
+	left: 15px;
+}
+
+#buttons-row .for-padding div:hover, #buttons-row .for-padding div:active {
+	border-color: #000;
+}
+
+#buttons-row .for-padding div:hover .hide-border-1, #buttons-row .for-padding div:hover .hide-border-3, #buttons-row .for-padding div:active .hide-border-1, #buttons-row .for-padding div:active .hide-border-3 {
+	width: 0;
+}
+
+#buttons-row .for-padding div:hover .hide-border-2, #buttons-row .for-padding div:hover .hide-border-4, #buttons-row .for-padding div:active .hide-border-2, #buttons-row .for-padding div:active .hide-border-4 {
+	height: 0;
+}
+
+#buttons-row div h3 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-weight: bold;
+	color: #000;
+}
+
+#buttons-row div span {
+	font-weight: bold;
+	color: #000;
 }
 
 /*****************footer*********************/
