@@ -5,8 +5,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	// console.log(document.getElementById('button').offsetHeight);
 	// console.log(document.getElementById('button').style.height);
 
-	document.getElementById("main-content").style.paddingTop = document.getElementsByTagName("header")[0].offsetHeight + 30 + "px";
-	document.getElementById("main-content").style.paddingBottom = document.getElementById("footer").offsetHeight + 30 + "px";
+	document.getElementById("main-content").style.marginTop = document.getElementsByTagName("header")[0].offsetHeight + 20 + "px";
+	document.getElementById("main-content").style.paddingBottom = document.getElementById("footer").offsetHeight + 20 + "px";
 	// console.log(document.getElementById("footer").offsetHeight + "px");
 	// console.log(document.getElementById("main-content").style.paddingBottom);
+	console.log(document.getElementsByTagName("header")[0].offsetHeight + 30 + "px");
+	console.log(document.getElementById("main-content").style.marginTop);
 });
