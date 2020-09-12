@@ -143,6 +143,10 @@ header {
 	cursor: pointer;
 	border: 5px solid #d1d1d1;
 	transition: 0.7s border-color;
+	/*transition-duration: 0.7s;*/
+	/*transition-delay: 0.7s;*/
+	/*transition-property: border-color, background-color;*/
+	/*transition-property: border-color, box-shadow;*/
 }
 
 #buttons-row > div {
@@ -151,7 +155,7 @@ header {
 
 .hide-border-1, .hide-border-3 {
 	width: 50%;
-	height: 5px;
+	height: 7px;
 	background-color: #f0ffff;
 	position: absolute;
 	transition: 0.7s width;
@@ -159,16 +163,16 @@ header {
 
 .hide-border-1 {
 	right: 25%;
-	top: 15px;
+	top: 14px;
 }
 
 .hide-border-3 {
 	left: 25%;
-	bottom: 15px;
+	bottom: 14px;
 }
 
 .hide-border-2, .hide-border-4 {
-	width: 5px;
+	width: 7px;
 	height: 50%;
 	background-color: #f0ffff;
 	position: absolute;
@@ -177,16 +181,18 @@ header {
 
 .hide-border-2 {
 	bottom: 25%;
-	right: 15px;
+	right: 14px;
 }
 
 .hide-border-4 {
 	top: 25%;
-	left: 15px;
+	left: 14px;
 }
 
 #buttons-row .for-padding div:hover, #buttons-row .for-padding div:active {
 	border-color: #000;
+	/*background-color: #ADD8E6;*/
+	/*box-shadow: 0 0 15px #000;*/
 }
 
 #buttons-row .for-padding div:hover .hide-border-1, #buttons-row .for-padding div:hover .hide-border-3, #buttons-row .for-padding div:active .hide-border-1, #buttons-row .for-padding div:active .hide-border-3 {
@@ -220,9 +226,99 @@ header {
 	border-color: #f6cd8b;
 }
 
-#buttons-row .for-padding div#button-1:hover {
-	border-color: #d6ad6b;
+#buttons-row .for-padding div#button-1:hover, #buttons-row .for-padding div#button-1:active {
+	border-color: #b68d4b;
 }
+
+#buttons-row .for-padding div#button-2 {
+	border-color: #02075d;
+}
+
+#buttons-row .for-padding div#button-2:hover, #buttons-row .for-padding div#button-2:active {
+	border-color: #00001d;
+}
+
+#buttons-row .for-padding div#button-3 {
+	border-color: #02075d;
+}
+
+#buttons-row .for-padding div#button-3:hover, #buttons-row .for-padding div#button-3:active {
+	border-color: #00001d;
+}
+
+#buttons-row .for-padding div#button-4 {
+	border-color: #02075d;
+}
+
+#buttons-row .for-padding div#button-4:hover, #buttons-row .for-padding div#button-4:active {
+	border-color: #00001d;
+}
+
+#buttons-row .for-padding div#button-5 {
+	border-color: #acace6;
+}
+
+#buttons-row .for-padding div#button-5:hover, #buttons-row .for-padding div#button-5:active {
+	border-color: #6c6ca6;
+}
+
+#buttons-row .for-padding div#button-6 {
+	border-color: #acace6;
+}
+
+#buttons-row .for-padding div#button-6:hover, #buttons-row .for-padding div#button-6:active {
+	border-color: #6c6ca6;
+}
+
+#buttons-row .for-padding div#button-7 {
+	border-color: #acace6;
+}
+
+#buttons-row .for-padding div#button-7:hover, #buttons-row .for-padding div#button-7:active {
+	border-color: #6c6ca6;
+}
+
+@media (max-width: 768px) {
+	#buttons-row .for-padding div#button-4 {
+		border-color: #acace6;
+	}
+
+	#buttons-row .for-padding div#button-4:hover, #buttons-row .for-padding div#button-4:active {
+		border-color: #6c6ca6;
+	}
+
+	#buttons-row .for-padding div#button-6 {
+		border-color: #9b2948;
+	}
+
+	#buttons-row .for-padding div#button-6:hover, #buttons-row .for-padding div#button-6:active {
+		border-color: #5b0008;
+	}
+
+	#buttons-row .for-padding div#button-7 {
+		border-color: #9b2948;
+	}
+
+	#buttons-row .for-padding div#button-7:hover, #buttons-row .for-padding div#button-7:active {
+		border-color: #5b0008;
+	}
+}
+
+/*#buttons-row .for-padding div#button-3 {
+	border-color: #acace6;
+}
+
+#buttons-row .for-padding div#button-3:hover, #buttons-row .for-padding div#button-3:active {
+	border-color: #6c6ca6;
+}
+
+#buttons-row .for-padding div#button-4 {
+	border-color: #9b2948;
+}
+
+#buttons-row .for-padding div#button-4:hover, #buttons-row .for-padding div#button-4:active {
+	border-color: #5b0008;
+}*/
 /**********buttons color end***********/
 
 /*****************footer*********************/
