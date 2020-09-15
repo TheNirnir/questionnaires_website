@@ -141,7 +141,7 @@ header {
 	text-align: center;
 	padding: 20px;
 	cursor: pointer;
-	border: 5px solid #d1d1d1;
+	border: 6px solid #d1d1d1;
 	transition: 0.7s border-color;
 	/*transition-duration: 0.7s;*/
 	/*transition-delay: 0.7s;*/
@@ -155,7 +155,7 @@ header {
 
 .hide-border-1, .hide-border-3 {
 	width: 50%;
-	height: 7px;
+	height: 8px;
 	background-color: #f0ffff;
 	position: absolute;
 	transition: 0.7s width;
@@ -172,7 +172,7 @@ header {
 }
 
 .hide-border-2, .hide-border-4 {
-	width: 7px;
+	width: 8px;
 	height: 50%;
 	background-color: #f0ffff;
 	position: absolute;
