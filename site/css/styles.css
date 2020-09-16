@@ -219,6 +219,8 @@ header {
 
 #buttons-row div span.no-initials {
 	font-size: 1.2em;
+	display: inline-block;
+	height: 100%;
 }
 
 /**********buttons color***********/

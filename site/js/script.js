@@ -25,6 +25,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
 		document.getElementById("button-7").style.height = document.getElementById("button-6").offsetHeight + "px";
 	}
 
-	// console.log(document.getElementById("button-3").offsetHeight + "px");
+	// for (var i = 0; i < document.getElementsByClassName("no-initials").length; i++) {
+	// 	document.getElementsByClassName("no-initials")[i].style.lineHeight = document.getElementsByClassName("no-initials")[i].offsetHeight + "px";
+	// }
+	document.getElementsByClassName("no-initials")[1].style.lineHeight = document.getElementsByClassName("no-initials")[1].offsetHeight + "px";
+
+	// console.log(document.getElementsByClassName("no-initials")[1].offsetHeight + "px");
 	// console.log(screen.width);
 });
