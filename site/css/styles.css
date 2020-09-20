@@ -149,6 +149,15 @@ header {
 	/*transition-property: border-color, box-shadow;*/
 }
 
+#buttons-row .for-padding div img {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	z-index: 3;
+	top: -10px;
+	left: 0px;
+}
+
 #buttons-row > div {
 	position: relative;
 }
