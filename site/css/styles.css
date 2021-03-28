@@ -552,4 +552,11 @@ h3#questionnaire-part-title {
 		font-size: 0.8em;
 	}
 }
+
+@media(max-width: 430px) {
+	#languages-container div.col-xs-6 {
+		width: 100%;
+	}
+}
+
 /*********************end of media queries*********************/
