@@ -422,7 +422,7 @@ h2#questionnaire-title {
 	font-weight: bold;
 	color: #9fd0ed;
 	font-size: 1.5em;
-	margin-bottom: 0;
+	margin-bottom: 10px;
 	margin-top: 0;
 }
 
@@ -477,6 +477,15 @@ h3#questionnaire-part-title {
     border-left: none;
     bottom: 0;
     left: -10px;
+}
+
+.saparate-line {
+	height: 100px;
+	width: 2px;
+	background-color: #000;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 /*****************end of questionnaires pages*********************/
 
