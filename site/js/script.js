@@ -1,6 +1,5 @@
-document.addEventListener("DOMContentLoaded", function (event) {
-	document.getElementById('header-trpezoid').style.borderLeftWidth = document.getElementById('header-trpezoid').offsetWidth + "px";
-	document.getElementById('footer-trpezoid').style.borderRightWidth = document.getElementById('footer-trpezoid').offsetWidth + "px";
+document.addEventListener("DOMContentLoaded", sizesSet);
+	
 	// document.getElementById('button').style.height = document.getElementById('button').offsetWidth + "px";
 	// // document.getElementById('button').style.height = 200;
 	// console.log(document.getElementById('button').offsetWidth);
@@ -34,7 +33,20 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 // 	// console.log(document.getElementsByClassName("no-initials")[1].offsetHeight + "px");
 // 	// console.log(screen.width);
-});
+
+// document.getElementsByTagName('html').onresize = function (event) {
+// 	document.getElementById('header-trpezoid').style.borderLeftWidth = document.getElementById('header-trpezoid').offsetWidth + "px";
+// 	document.getElementById('footer-trpezoid').style.borderRightWidth = document.getElementById('footer-trpezoid').offsetWidth + "px";
+// };
+window.addEventListener("resize", sizesSet);
+
+function sizesSet(event) {
+	document.getElementById('header-trpezoid').style.borderLeftWidth = document.getElementById('header-container').offsetWidth + "px";
+	document.getElementById('footer-trpezoid').style.borderRightWidth = document.getElementById('footer-container').offsetWidth + "px";
+	for (var i = 0; i < document.querySelectorAll('.language-flag').length; i++) {
+		document.getElementsByClassName('language-flag')[0].style.height = document.getElementsByClassName('language-name')[0].offsetHeight + "px";
+	}
+}
 
 function questionnairePage(questionnaire) {
 	window.location.href = "questionnairesPage.html"

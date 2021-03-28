@@ -21,7 +21,7 @@ header {
 
 #header-trpezoid {
 	width: 100%;
-	background-color: transparent;
+	background-color: #f0ffff;
 	height: 75px;
   	border-bottom: 75px solid transparent;
   	border-left: 0px solid #124f6b;
@@ -58,7 +58,7 @@ header {
 #about-container h2 {
 	text-align: center;
 	font-weight: bold;
-	font-size: 2em
+	font-size: 2em;
 }
 
 .button-container {
@@ -418,15 +418,15 @@ header {
 /**********buttons color end***********/
 
 /*****************questionnaires pages*********************/
-/*h2 {
+h2#questionnaire-title {
 	font-weight: bold;
 	color: #9fd0ed;
 	font-size: 1.5em;
 	margin-bottom: 0;
 	margin-top: 0;
-}*/
+}
 
-/*#header-container div {
+#header-container div {
 	display: inline-block;
 }
 
@@ -434,7 +434,50 @@ header {
 	width: 8%;
 	margin-top: -2%;
 	margin-right: 10px;
-}*/
+}
+
+h3#questionnaire-part-title {
+	text-align: center;
+	font-weight: bold;
+}
+
+.language-padding {
+	padding: 20px;
+}
+
+.language-flag {
+	background-color: #9fd0ed;
+	height: 0;
+	float: left;
+	padding: 10px 15px 10px 10px;
+	border-radius: 20px 0 0 20px;
+}
+
+.language-flag img {
+	height: 100%;
+}
+
+.language-name {
+	float: left;
+	position: relative;
+	background-color: #124f6b;
+	padding: 10px 10px 10px 15px;
+	border-radius: 0 20px 20px 0;
+	color: #fff;
+}
+
+.language-trapezoid {
+	position: absolute;
+	width: 0;
+	background-color: #9fd0ed;
+	height: 40px;
+  	border-top: 40px solid transparent;
+  	border-right: 20px solid #124f6b;
+    border-bottom: none;
+    border-left: none;
+    bottom: 0;
+    left: -10px;
+}
 /*****************end of questionnaires pages*********************/
 
 /*****************footer*********************/
@@ -449,7 +492,7 @@ header {
 
 #footer-trpezoid {
 	width: 100%;
-	background-color: transparent;
+	background-color: #f0ffff;
 	height: 75px;
   	border-top: 75px solid transparent;
   	border-right: 0px solid #9fd0ed;
