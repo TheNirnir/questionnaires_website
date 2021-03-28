@@ -443,6 +443,11 @@ h3#questionnaire-part-title {
 
 .language-padding {
 	padding: 20px;
+	text-align: center;
+}
+
+.language-center {
+	display: inline-block;
 }
 
 .language-flag {
@@ -480,9 +485,10 @@ h3#questionnaire-part-title {
 }
 
 .saparate-line {
-	height: 100px;
+	height: 150px;
 	width: 2px;
-	background-color: #000;
+	background-image: linear-gradient(#000, #f0ffff);
+	border-radius: 10px;
 	position: absolute;
 	right: 0;
 	top: 0;
