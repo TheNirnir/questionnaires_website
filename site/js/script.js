@@ -44,7 +44,7 @@ function sizesSet(event) {
 	document.getElementById('header-trpezoid').style.borderLeftWidth = document.getElementById('header-container').offsetWidth + "px";
 	document.getElementById('footer-trpezoid').style.borderRightWidth = document.getElementById('footer-container').offsetWidth + "px";
 	for (var i = 0; i < document.querySelectorAll('.language-flag').length; i++) {
-		document.getElementsByClassName('language-flag')[0].style.height = document.getElementsByClassName('language-name')[0].offsetHeight + "px";
+		document.getElementsByClassName('language-flag')[i].style.height = document.getElementsByClassName('language-name')[i].offsetHeight + "px";
 	}
 }
 
