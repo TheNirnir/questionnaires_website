@@ -508,7 +508,7 @@ h3.questionnaire-part-title {
 }
 
 .saparate-line {
-	height: 150px;
+	height: 100px;
 	width: 2px;
 	background-image: linear-gradient(#000, #f0ffff);
 	border-radius: 10px;
