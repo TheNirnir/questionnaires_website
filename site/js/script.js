@@ -7,6 +7,9 @@ document.addEventListener("DOMContentLoaded", sizesSet);
 // document.addEventListener("DOMContentLoaded", questionnairePage("x"));
 	
 window.addEventListener("resize", sizesSet);
+// if (window.location.href == "localhost:3000/questionnairesPage.html") {
+window.addEventListener("resize", saparateLineSet);
+// }
 
 function sizesSet(event) {
 	document.getElementById("footer").style.marginTop = 0;
@@ -15,12 +18,29 @@ function sizesSet(event) {
 	for (var i = 0; i < document.querySelectorAll('.language-flag').length; i++) {
 		document.getElementsByClassName('language-flag')[i].style.height = document.getElementsByClassName('language-name')[i].offsetHeight + "px";
 	}
+	// document.getElementById("footer").style.marginTop = document.getElementById("footer").offsetHeight + "px";
+	// document.getElementById("main-content").style.marginBottom = document.getElementById("footer").offsetHeight + "px";
+	// document.getElementsByTagName("html")[0].style.paddingBottom = document.getElementById("footer").offsetHeight + "px";
 	// console.log(document.getElementsByTagName("html")[0].offsetHeight);
 	// console.log(screen.height);
 
-	// if (screen.height > document.getElementsByTagName("html")[0].offsetHeight) {
-	// 	document.getElementById("footer").style.marginTop = (screen.height - document.getElementsByTagName("html")[0].offsetHeight) + "px";
+	if (screen.height > document.getElementsByTagName("html")[0].offsetHeight) {
+		// document.getElementById("footer").style.marginTop = (screen.height - document.getElementsByTagName("html")[0].offsetHeight) + "px";
+		document.getElementById("footer").style.marginTop = (document.documentElement.clientHeight - document.getElementsByTagName("html")[0].offsetHeight) + "px";
+	}
+
+	// if (window.location.href == "questionnairesPage.html") {
+	// 	document.getElementsByClassName("saparate-line")[0].style.height = (document.getElementById("languages-container").offsetHeight-20) + "px";
+	// 	console.log("Yes!");
 	// }
+	// console.log(window.location.href);
+	// console.log(window.location.pathname.split("/").pop());
+}
+
+function saparateLineSet(event) {
+	if (window.location.pathname.split("/").pop() == "questionnairesPage.html") {
+		document.getElementsByClassName("saparate-line")[0].style.height = (document.getElementById("languages-container").offsetHeight-20) + "px";
+	}
 }
 
 // console.log(QuestionnaireObj.about);
@@ -63,6 +83,7 @@ function buildAndShowQuestionnaire(QuestionnaireObj) {
 				var QuestionnaireViewHTML = buildQuestionnaireViewHTML(QuestionnaireObj, QuestionnaireAboutHtml, QuestionnaireLanguageHtml, QuestionnaireThirdHtml);
 				document.querySelector("#main-content").innerHTML = QuestionnaireViewHTML;
 				sizesSet();
+				saparateLineSet();
 			}, false);
 		}, false);
 	}, false);

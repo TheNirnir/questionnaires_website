@@ -535,6 +535,8 @@ h3.questionnaire-part-title {
 	margin: 0;
 	background-color: #f0ffff;
 	line-height: 0;
+	/*position: fixed;*/
+	/*bottom: 0;*/
 }
 
 #footer-trpezoid {
