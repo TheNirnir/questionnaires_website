@@ -18,6 +18,9 @@ function sizesSet(event) {
 	for (var i = 0; i < document.querySelectorAll('.language-flag').length; i++) {
 		document.getElementsByClassName('language-flag')[i].style.height = document.getElementsByClassName('language-name')[i].offsetHeight + "px";
 	}
+	for (var i = 0; i < document.querySelectorAll('.button').length; i++) {
+		document.getElementsByClassName('button')[i].style.height = document.getElementsByClassName('button')[5].offsetHeight + "px";
+	}
 	// document.getElementById("footer").style.marginTop = document.getElementById("footer").offsetHeight + "px";
 	// document.getElementById("main-content").style.marginBottom = document.getElementById("footer").offsetHeight + "px";
 	// document.getElementsByTagName("html")[0].style.paddingBottom = document.getElementById("footer").offsetHeight + "px";
@@ -61,7 +64,27 @@ function questionnairePageBuild() {
 	if (sessionStorage.getItem("questionnaire") == "MDSI") {
 		buildAndShowQuestionnaire(MDSIObj);
 	}
-
+	if (sessionStorage.getItem("questionnaire") == "FCSR") {
+		buildAndShowQuestionnaire(FCSRObj);
+	}
+	if (sessionStorage.getItem("questionnaire") == "SDCF") {
+		buildAndShowQuestionnaire(SDCFObj);
+	}
+	if (sessionStorage.getItem("questionnaire") == "PRDS") {
+		buildAndShowQuestionnaire(PRDSObj);
+	}
+	if (sessionStorage.getItem("questionnaire") == "FDH") {
+		buildAndShowQuestionnaire(FDHObj);
+	}
+	if (sessionStorage.getItem("questionnaire") == "PCSDS") {
+		buildAndShowQuestionnaire(PCSDSObj);
+	}
+	if (sessionStorage.getItem("questionnaire") == "DRS") {
+		buildAndShowQuestionnaire(DRSObj);
+	}
+	if (sessionStorage.getItem("questionnaire") == "DCBQ") {
+		buildAndShowQuestionnaire(DCBQObj);
+	}
 }
 
 function setTitle(QuestionnaireObj) {
