@@ -73,8 +73,8 @@ function questionnairePageBuild() {
 	if (sessionStorage.getItem("questionnaire") == "PRDS") {
 		buildAndShowQuestionnaire(PRDSObj);
 	}
-	if (sessionStorage.getItem("questionnaire") == "FDH") {
-		buildAndShowQuestionnaire(FDHObj);
+	if (sessionStorage.getItem("questionnaire") == "RDHS") {
+		buildAndShowQuestionnaire(RDHSObj);
 	}
 	if (sessionStorage.getItem("questionnaire") == "PCSDS") {
 		buildAndShowQuestionnaire(PCSDSObj);
