@@ -19,7 +19,7 @@ function sizesSet(event) {
 		document.getElementsByClassName('language-flag')[i].style.height = document.getElementsByClassName('language-name')[i].offsetHeight + "px";
 	}
 	for (var i = 0; i < document.querySelectorAll('.button').length; i++) {
-		document.getElementsByClassName('button')[i].style.height = document.getElementsByClassName('button')[5].offsetHeight + "px";
+		document.getElementsByClassName('button')[i].style.height = document.getElementsByClassName('button')[3].offsetHeight + "px";
 	}
 	// document.getElementById("footer").style.marginTop = document.getElementById("footer").offsetHeight + "px";
 	// document.getElementById("main-content").style.marginBottom = document.getElementById("footer").offsetHeight + "px";
@@ -115,7 +115,8 @@ function buildAndShowQuestionnaire(QuestionnaireObj) {
 function buildQuestionnaireViewHTML(QuestionnaireObj, QuestionnaireAboutHtml, QuestionnaireLanguageHtml, QuestionnaireThirdHtml) {
 	var finalHtml = QuestionnaireAboutHtml;
 
-	var about = QuestionnaireObj.about;
+	// var about = QuestionnaireObj.about;
+	var about = replaceSigns(QuestionnaireObj.about);
 
 	finalHtml = insertProperty(finalHtml, "about", about);
 
@@ -144,4 +145,23 @@ function buildQuestionnaireViewHTML(QuestionnaireObj, QuestionnaireAboutHtml, Qu
 	finalHtml += "</ul></div>";
 
 	return finalHtml;
+}
+
+function replaceSigns (string) {
+	var propToReplace = "–";
+	var propValue = "&ndash;";
+	string = string.replace(RegExp(propToReplace, "g"), propValue);
+	propToReplace = "-";
+	propValue = "&8209;";
+	string = string.replace(RegExp(propToReplace, "g"), propValue);
+	propToReplace = "&";
+	propValue = "&amp;";
+	string = string.replace(RegExp(propToReplace, "g"), propValue);
+	propToReplace = "’";
+	propValue = "&rsquo;";
+	string = string.replace(RegExp(propToReplace, "g"), propValue);
+	propToReplace = "Taubman &ndash;";
+	propValue = "Taubman&nbsp;&ndash;";
+	string = string.replace(RegExp(propToReplace, "g"), propValue);
+	return string;
 }
