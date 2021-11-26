@@ -1,9 +1,12 @@
 body {
 	background-color: #f0ffff;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 500;
 }
 
 header {
 	width: 100%;
+	font-family: 'Raleway', sans-serif;
 }
 
 .navbar {
@@ -60,6 +63,7 @@ header {
 	text-align: center;
 	font-weight: bold;
 	font-size: 2em;
+	font-family: 'Raleway', sans-serif;
 }
 
 .button-container {
@@ -451,6 +455,7 @@ h2#questionnaire-title {
 h3.questionnaire-part-title {
 	text-align: center;
 	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
 }
 
 #language-title {
@@ -536,6 +541,7 @@ h3.questionnaire-part-title {
 	margin: 0;
 	background-color: #f0ffff;
 	line-height: 0;
+	font-family: 'Quicksand', sans-serif;
 	/*position: fixed;*/
 	/*bottom: 0;*/
 }
