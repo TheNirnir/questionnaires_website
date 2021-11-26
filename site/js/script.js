@@ -85,6 +85,12 @@ function questionnairePageBuild() {
 	if (sessionStorage.getItem("questionnaire") == "DCBQ") {
 		buildAndShowQuestionnaire(DCBQObj);
 	}
+	if (sessionStorage.getItem("questionnaire") == "DSEQ") {
+		buildAndShowQuestionnaire(DSEQObj);
+	}
+	if (sessionStorage.getItem("questionnaire") == "ATADS") {
+		buildAndShowQuestionnaire(ATADSObj);
+	}
 }
 
 function setTitle(QuestionnaireObj) {
@@ -138,7 +144,7 @@ function buildQuestionnaireViewHTML(QuestionnaireObj, QuestionnaireAboutHtml, Qu
 
 	for (var i = 0; i < QuestionnaireObj.publications.length; i++) {
 		finalHtml += "<li>";
-		finalHtml += QuestionnaireObj.publications[i];
+		finalHtml += replaceSigns(QuestionnaireObj.publications[i]);
 		finalHtml += "</li>";
 	}
 
