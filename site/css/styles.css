@@ -592,7 +592,7 @@ h3.questionnaire-part-title {
 		float: none;
 	}
 	#nir-logo {
-		width: 17%;
+		width: 20%;
 	}
 }
 /*********************end of extra small devices only*********************/
@@ -600,7 +600,7 @@ h3.questionnaire-part-title {
 /*********************small devices only*********************/
 @media (min-width: 768px) and (max-width: 991px) {
 	#nir-logo {
-		width: 12%;
+		width: 14%;
 	}
 }
 /*********************end of small devices only*********************/
@@ -608,7 +608,7 @@ h3.questionnaire-part-title {
 /*********************medium devices only*********************/
 @media (min-width: 992px) and (max-width: 1199px) {
 	#nir-logo {
-		width: 10%;
+		width: 12%;
 	}
 }
 /*********************end of medium devices only*********************/
@@ -616,7 +616,7 @@ h3.questionnaire-part-title {
 /*********************large devices only*********************/
 @media (min-width: 1200px) {
 	#nir-logo {
-		width: 7%;
+		width: 10%;
 	}
 }
 /*********************end of large devices only*********************/
