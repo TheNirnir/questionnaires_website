@@ -158,7 +158,7 @@ function replaceSigns (string) {
 	var propValue = "&ndash;";
 	string = string.replace(RegExp(propToReplace, "g"), propValue);
 	propToReplace = "-";
-	propValue = "&8209;";
+	propValue = "&#8209;";
 	string = string.replace(RegExp(propToReplace, "g"), propValue);
 	propToReplace = "&";
 	propValue = "&amp;";
