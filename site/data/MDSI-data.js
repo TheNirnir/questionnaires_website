@@ -25,7 +25,7 @@ var MDSIObj = {
 		},
 		{
 			country: "china",
-			language: "Mandarin Chinese"
+			language: "Mandarin"
 		},
 		{
 			country: "colombia",

@@ -38,10 +38,16 @@ function sizesSet(event) {
 	// }
 	// console.log(window.location.href);
 	// console.log(window.location.pathname.split("/").pop());
-	
-	// for (var i = 0; i < document.querySelectorAll('.language-name').length; i++) {
-	// 	document.getElementsByClassName('language-name')[i].style.width = document.getElementsByClassName('language-center')[5].offsetWidth - document.getElementsByClassName('language-flag')[i].offsetWidth + "px";
-	// }
+	var maxLeng = 0;
+	for (var i = 0; i < document.querySelectorAll('.language-name').length; i++) {
+		if (document.getElementsByClassName('language-center')[i].offsetWidth > document.getElementsByClassName('language-center')[maxLeng].offsetWidth) {
+			maxLeng = i;
+		}
+	}
+
+	for (var i = 0; i < document.querySelectorAll('.language-name').length; i++) {
+		document.getElementsByClassName('language-name')[i].style.width = document.getElementsByClassName('language-center')[maxLeng].offsetWidth - document.getElementsByClassName('language-flag')[i].offsetWidth + "px";
+	}
 }
 
 function saparateLineSet(event) {
