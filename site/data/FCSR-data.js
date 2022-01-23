@@ -1,6 +1,6 @@
 var FCSRObj = {
-	shortName: "FCSR",
-	fullName: "Family Climate for Road Safety",
+	shortName: "FCRSS",
+	fullName: "Family Climate for Road Safety Scale",
 	about: "Family Climate for Road Safety Scale (FCRSS; Taubman – Ben-Ari and Katz – Ben-Ami, 2013) consists of 54 items relating to the seven domains of FCRS: (1) Modeling (11 items), that is, the positive model provided by parents by their own driving behavior, such as planning ahead so as not to be pressed for time, obeying traffic regulations, driving safely even when they are in a hurry, tired, or feeling stressed, etc.; (2) Feedback (5 items), or parents’ ability to encourage their offspring, to give positive feedback, and to praise them for safe and considerate driving; (3) Communication (9 items), that is, parents’ tendency to teach the young driver how to anticipate potential hazards on the road, to openly discuss anything related to driving, including risky driving, and to include the young driver in framing a family “contract” regarding his/her driving; (4) Monitoring (7 items), relating to parents’ monitoring and control of the young driver's driving habits, including making sure they do not drive recklessly and having the young driver inform them of where they are taking the car, who is going with them, and when they intend to be home; (5) Noncommitment (8 items), or the family's tendency not to invest time in safety education, to ignore the young driver's risky driving, and to pay attention to safety only in the case of a car crash; (6) Messages (8 items), indicating that parents deliver clear verbal safety messages to their young drivers, and that their children understand these messages; and (7) Limits (6 items). that is, the extent to which parents set systematic and clear-cut limits on their adolescents’ driving behavior and discipline them for traffic violations, and that the young driver is aware of these limits and the consequences of not obeying them.\nTwo versions are available, one for young drivers and one for parents. The two versions are almost identical, save for changes in phrasing to suit the different populations, and only 4 items for Feedback and 6 items for Monitoring in the questionnaire for parents, for a total of 52 items (Taubman – Ben-Ari, 2015).\nRespondents are asked to indicate the degree to which the statement in each item is an accurate description of them and their family. Responses are marked on a 5-point scale ranging from 1 (not at all) to 5 (very much). Seven scores are computed by averaging the responses to the items in each factor, with higher scores reflecting greater perception that the specific domain is characteristic of their family.",
 	languages: [
 		{
@@ -10,6 +10,14 @@ var FCSRObj = {
 		{
 			country: "usa",
 			language: "English"
+		},
+		{
+			country: "spain",
+			language: "Spanish"
+		},
+		{
+			country: "turkey",
+			language: "Turkish"
 		}
 	],
 	publications: [

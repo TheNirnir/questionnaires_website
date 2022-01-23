@@ -10,6 +10,10 @@ var ATADSObj = {
 		{
 			country: "usa",
 			language: "English"
+		},
+		{
+			country: "china",
+			language: "Chinese"
 		}
 	],
 	publications: [

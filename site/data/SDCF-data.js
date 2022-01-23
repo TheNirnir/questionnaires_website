@@ -10,6 +10,10 @@ var SDCFObj = {
 		{
 			country: "usa",
 			language: "English"
+		},
+		{
+			country: "china",
+			language: "Chinese"
 		}
 	],
 	publications: [

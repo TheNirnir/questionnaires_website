@@ -10,6 +10,10 @@ var DRSObj = {
 		{
 			country: "usa",
 			language: "English"
+		},
+		{
+			country: "romania",
+			language: "Romanian"
 		}
 	],
 	publications: [

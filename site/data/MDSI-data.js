@@ -11,14 +11,50 @@ var MDSIObj = {
 			country: "usa",
 			language: "English"
 		},
-		// {
-		// 	country: "spain",
-		// 	language: "Spanish"
-		// },
-		// {
-		// 	country: "argentina",
-		// 	language: "Spanish"
-		// }
+		{
+			country: "italy",
+			language: "Italian"
+		},
+		{
+			country: "malasiya",
+			language: "Malaysian"
+		},
+		{
+			country: "bulgaria",
+			language: "Bulgarian"
+		},
+		{
+			country: "china",
+			language: "Mandarin Chinese"
+		},
+		{
+			country: "colombia",
+			language: "Spanish"
+		},
+		{
+			country: "romania",
+			language: "Romanian"
+		},
+		{
+			country: "netherlands",
+			language: "Dutch"
+		},
+		{
+			country: "germany",
+			language: "German"
+		},
+		{
+			country: "turkey",
+			language: "Turkish"
+		},
+		{
+			country: "spain",
+			language: "Spanish"
+		},
+		{
+			country: "argentina",
+			language: "Spanish"
+		}
 	],
 	publications: [
 		"Bellem, H., Thiel, B., Schrauf, M., & Krems, J.F. (2018). Comfort in automated driving: An analysis of preferences for different automated driving styles and their dependence on personality traits. Transportation Research Part F: Traffic Psychology and Behaviour, 55, 90-100. https://doi.org/10.1016/j.trf.2018.02.036",

@@ -10,6 +10,10 @@ var DCBQObj = {
 		{
 			country: "usa",
 			language: "English"
+		},
+		{
+			country: "china",
+			language: "Chiniese"
 		}
 	],
 	publications: [

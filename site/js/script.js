@@ -38,6 +38,10 @@ function sizesSet(event) {
 	// }
 	// console.log(window.location.href);
 	// console.log(window.location.pathname.split("/").pop());
+	
+	// for (var i = 0; i < document.querySelectorAll('.language-name').length; i++) {
+	// 	document.getElementsByClassName('language-name')[i].style.width = document.getElementsByClassName('language-center')[5].offsetWidth - document.getElementsByClassName('language-flag')[i].offsetWidth + "px";
+	// }
 }
 
 function saparateLineSet(event) {
@@ -155,19 +159,22 @@ function buildQuestionnaireViewHTML(QuestionnaireObj, QuestionnaireAboutHtml, Qu
 
 function replaceSigns (string) {
 	var propToReplace = "–";
-	var propValue = "&ndash;";
+	var propValue = "&nd{{{ash;";
 	string = string.replace(RegExp(propToReplace, "g"), propValue);
 	propToReplace = "-";
-	propValue = "&#8209;";
+	propValue = "&#82{{{09;";
 	string = string.replace(RegExp(propToReplace, "g"), propValue);
 	propToReplace = "&";
-	propValue = "&amp;";
+	propValue = "&am{{{p;";
 	string = string.replace(RegExp(propToReplace, "g"), propValue);
 	propToReplace = "’";
-	propValue = "&rsquo;";
+	propValue = "&rs{{{quo;";
 	string = string.replace(RegExp(propToReplace, "g"), propValue);
 	propToReplace = "Taubman &ndash;";
-	propValue = "Taubman&nbsp;&ndash;";
+	propValue = "Taubman&n{{{bsp;&n{{{dash;";
+	string = string.replace(RegExp(propToReplace, "g"), propValue);
+	propToReplace = "{{{";
+	propValue = "";
 	string = string.replace(RegExp(propToReplace, "g"), propValue);
 	return string;
 }
