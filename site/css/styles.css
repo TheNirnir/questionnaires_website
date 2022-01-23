@@ -553,6 +553,7 @@ h3.questionnaire-part-title {
 #publications-list {
 	margin-top: 20px;
 	padding: 0 20px 0 20px;
+	overflow-wrap: break-word;
 }
 
 #publications-list li {

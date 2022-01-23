@@ -71,6 +71,9 @@ function aboutImageSet(event) {
         if(document.querySelector(selector)!=null) {
             if (document.getElementById("about-container").offsetHeight < document.getElementById("about-img").offsetHeight) {
 				document.getElementById("about-container").style.height = document.getElementById("about-img").offsetHeight + "px";
+				if(sessionStorage.getItem("questionnaire") != "PRDS") {
+					document.getElementById("about-content").style.marginTop = (document.getElementById("about-img").offsetHeight-document.getElementById("about-content").offsetHeight)/2 + "px";
+				}
 			}
             return;
         }
@@ -192,23 +195,23 @@ function buildQuestionnaireViewHTML(QuestionnaireObj, QuestionnaireAboutHtml, Qu
 }
 
 function replaceSigns (string) {
-	var propToReplace = "–";
-	var propValue = "&nd{{{ash;";
-	string = string.replace(RegExp(propToReplace, "g"), propValue);
-	propToReplace = "-";
-	propValue = "&#82{{{09;";
-	string = string.replace(RegExp(propToReplace, "g"), propValue);
-	propToReplace = "&";
-	propValue = "&am{{{p;";
-	string = string.replace(RegExp(propToReplace, "g"), propValue);
-	propToReplace = "’";
-	propValue = "&rs{{{quo;";
-	string = string.replace(RegExp(propToReplace, "g"), propValue);
-	propToReplace = "Taubman &ndash;";
-	propValue = "Taubman&n{{{bsp;&n{{{dash;";
-	string = string.replace(RegExp(propToReplace, "g"), propValue);
-	propToReplace = "{{{";
-	propValue = "";
-	string = string.replace(RegExp(propToReplace, "g"), propValue);
+	// var propToReplace = "–";
+	// var propValue = "&nd{{{ash;";
+	// string = string.replace(RegExp(propToReplace, "g"), propValue);
+	// propToReplace = "-";
+	// propValue = "&#82{{{09;";
+	// string = string.replace(RegExp(propToReplace, "g"), propValue);
+	// propToReplace = "&";
+	// propValue = "&am{{{p;";
+	// string = string.replace(RegExp(propToReplace, "g"), propValue);
+	// propToReplace = "’";
+	// propValue = "&rs{{{quo;";
+	// string = string.replace(RegExp(propToReplace, "g"), propValue);
+	// propToReplace = "Taubman &ndash;";
+	// propValue = "Taubman&n{{{bsp;&n{{{dash;";
+	// string = string.replace(RegExp(propToReplace, "g"), propValue);
+	// propToReplace = "{{{";
+	// propValue = "";
+	// string = string.replace(RegExp(propToReplace, "g"), propValue);
 	return string;
 }
