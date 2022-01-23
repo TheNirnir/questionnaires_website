@@ -29,10 +29,12 @@ function sizesSet(event) {
 	// console.log(document.getElementsByTagName("html")[0].offsetHeight);
 	// console.log(screen.height);
 
-	if (screen.height > document.getElementsByTagName("html")[0].offsetHeight) {
+	// if (screen.height > document.getElementsByTagName("html")[0].offsetHeight) {
 		// document.getElementById("footer").style.marginTop = (screen.height - document.getElementsByTagName("html")[0].offsetHeight) + "px";
-		document.getElementById("footer").style.marginTop = (document.documentElement.clientHeight - document.getElementsByTagName("html")[0].offsetHeight) + "px";
-	}
+		// setTimeout(function() {
+		// document.getElementById("footer").style.marginTop = (document.documentElement.clientHeight - document.getElementsByTagName("html")[0].offsetHeight) + "px";
+		// }, 300);
+	// }
 
 	// if (window.location.href == "questionnairesPage.html") {
 	// 	document.getElementsByClassName("saparate-line")[0].style.height = (document.getElementById("languages-container").offsetHeight-20) + "px";
@@ -61,6 +63,35 @@ function saparateLineSet(event) {
 	if (window.location.pathname.split("/").pop() == "questionnairesPage.html") {
 		document.getElementsByClassName("saparate-line")[0].style.height = (document.getElementById("languages-container").offsetHeight-20) + "px";
 		aboutImageSet();
+		aboutPublicationsSet();
+
+		// waitForImageToDisplay("#about-img", 50);
+
+		// function waitForImageToDisplay(selector, time) {
+	 //        if(document.querySelector(selector)!=null) {
+	 //           console.log("img")
+	 //            return;
+	 //        }
+	 //        else {
+	 //            setTimeout(function() {
+	 //                waitForImageToDisplay(selector, time);
+	 //            }, time);
+	 //        }
+  //   	}
+
+  //   	waitForListToDisplay("#publications-list", 50);
+
+		// function waitForListToDisplay(selector, time) {
+	 //        if(document.querySelector(selector)!=null) {
+	 //           console.log("list")
+	 //            return;
+	 //        }
+	 //        else {
+	 //            setTimeout(function() {
+	 //                waitForListToDisplay(selector, time);
+	 //            }, time);
+	 //        }
+  //   	}
 	}
 }
 
@@ -83,6 +114,31 @@ function aboutImageSet(event) {
             }, time);
         }
     }
+}
+
+function aboutPublicationsSet(event) {
+	waitForListToDisplay("#publications-list", 50);
+
+	function waitForListToDisplay(selector, time) {
+        if(document.querySelector(selector)!=null) {
+        	console.log(screen.height);
+        	console.log(document.getElementsByTagName("html")[0].offsetHeight)
+           if ($(window).height() > document.getElementsByTagName("html")[0].offsetHeight) {
+           		// console.log("entered");
+				// document.getElementById("footer").style.marginTop = (document.documentElement.clientHeight - document.getElementsByTagName("html")[0].offsetHeight) + "px";
+				document.getElementById("footer").style.position = "fixed";
+			}
+			else {
+				document.getElementById("footer").style.position = "relative";
+			}
+            return;
+        }
+        else {
+            setTimeout(function() {
+                waitForListToDisplay(selector, time);
+            }, time);
+        }
+  	}
 }
 
 // console.log(QuestionnaireObj.about);
@@ -195,23 +251,23 @@ function buildQuestionnaireViewHTML(QuestionnaireObj, QuestionnaireAboutHtml, Qu
 }
 
 function replaceSigns (string) {
-	// var propToReplace = "–";
-	// var propValue = "&nd{{{ash;";
-	// string = string.replace(RegExp(propToReplace, "g"), propValue);
-	// propToReplace = "-";
-	// propValue = "&#82{{{09;";
-	// string = string.replace(RegExp(propToReplace, "g"), propValue);
-	// propToReplace = "&";
-	// propValue = "&am{{{p;";
-	// string = string.replace(RegExp(propToReplace, "g"), propValue);
-	// propToReplace = "’";
-	// propValue = "&rs{{{quo;";
-	// string = string.replace(RegExp(propToReplace, "g"), propValue);
-	// propToReplace = "Taubman &ndash;";
-	// propValue = "Taubman&n{{{bsp;&n{{{dash;";
-	// string = string.replace(RegExp(propToReplace, "g"), propValue);
-	// propToReplace = "{{{";
-	// propValue = "";
-	// string = string.replace(RegExp(propToReplace, "g"), propValue);
+	var propToReplace = "–";
+	var propValue = "&nd{{{ash;";
+	string = string.replace(RegExp(propToReplace, "g"), propValue);
+	propToReplace = "-";
+	propValue = "&#82{{{09;";
+	string = string.replace(RegExp(propToReplace, "g"), propValue);
+	propToReplace = "&";
+	propValue = "&am{{{p;";
+	string = string.replace(RegExp(propToReplace, "g"), propValue);
+	propToReplace = "’";
+	propValue = "&rs{{{quo;";
+	string = string.replace(RegExp(propToReplace, "g"), propValue);
+	propToReplace = "Taubman &ndash;";
+	propValue = "Taubman&n{{{bsp;&n{{{dash;";
+	string = string.replace(RegExp(propToReplace, "g"), propValue);
+	propToReplace = "{{{";
+	propValue = "";
+	string = string.replace(RegExp(propToReplace, "g"), propValue);
 	return string;
 }

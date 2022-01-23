@@ -571,7 +571,7 @@ h3.questionnaire-part-title {
 	line-height: 0;
 	font-family: 'Quicksand', sans-serif;
 	/*position: fixed;*/
-	/*bottom: 0;*/
+	bottom: 0;
 }
 
 #footer-trpezoid {
