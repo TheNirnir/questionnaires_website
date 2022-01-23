@@ -1,6 +1,7 @@
 var PRDSObj = {
 	shortName: "PRDS",
 	fullName: "Proneness to Reckless Driving Scale",
+	image: "speedometer.png",
 	about: "Proneness to Reckless Driving Scale (PRDS; Taubman – Ben-Ari, Florian, & Mikulincer, 1999) measures the willingness to take risks while driving by means of a series of 10 short hypothetical driving scenarios (e.g., You are on your way to a weekend vacation. A very slow truck is driving just in front of you. A continuous white line separates between you and the oncoming lane. What do you think are the chances that you will try and overtake the truck?). For each scenario, responses are indicated on an 11-point scale, ranging from 0 (0% chance of behaving in the manner described) to 10 (100% chance of behaving in the manner described). Responses to the 10 items are averaged to obtain a total score, with higher scores reflecting a higher proneness to reckless driving.",
 	languages: [
 		{

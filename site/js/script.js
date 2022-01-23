@@ -4,6 +4,8 @@ var QuestionnaireThirdHtml = "snippets/third_snippet.html";
 
 document.addEventListener("DOMContentLoaded", sizesSet);
 
+document.addEventListener("DOMContentLoaded", aboutImageSet);
+
 // document.addEventListener("DOMContentLoaded", questionnairePage("x"));
 	
 window.addEventListener("resize", sizesSet);
@@ -48,12 +50,36 @@ function sizesSet(event) {
 	for (var i = 0; i < document.querySelectorAll('.language-name').length; i++) {
 		document.getElementsByClassName('language-name')[i].style.width = document.getElementsByClassName('language-center')[maxLeng].offsetWidth - document.getElementsByClassName('language-flag')[i].offsetWidth + "px";
 	}
+
+	if (document.querySelector("#about-image")!=null && document.getElementById("about-container").offsetHeight < document.getElementById("about-img").offsetHeight) {
+		document.getElementById("about-container").style.height = document.getElementById("about-img").offsetHeight + "px";
+		console.log("hi");
+	}
 }
 
 function saparateLineSet(event) {
 	if (window.location.pathname.split("/").pop() == "questionnairesPage.html") {
 		document.getElementsByClassName("saparate-line")[0].style.height = (document.getElementById("languages-container").offsetHeight-20) + "px";
+		aboutImageSet();
 	}
+}
+
+function aboutImageSet(event) {
+	waitForAboutToDisplay("#about-img", 100);
+
+	function waitForAboutToDisplay(selector, time) {
+        if(document.querySelector(selector)!=null) {
+            if (document.getElementById("about-container").offsetHeight < document.getElementById("about-img").offsetHeight) {
+				document.getElementById("about-container").style.height = document.getElementById("about-img").offsetHeight + "px";
+			}
+            return;
+        }
+        else {
+            setTimeout(function() {
+                waitForAboutToDisplay(selector, time);
+            }, time);
+        }
+    }
 }
 
 // console.log(QuestionnaireObj.about);
@@ -133,8 +159,10 @@ function buildQuestionnaireViewHTML(QuestionnaireObj, QuestionnaireAboutHtml, Qu
 
 	// var about = QuestionnaireObj.about;
 	var about = replaceSigns(QuestionnaireObj.about);
+	var imageSrc = replaceSigns(QuestionnaireObj.image);
 
 	finalHtml = insertProperty(finalHtml, "about", about);
+	finalHtml = insertProperty(finalHtml, "image", imageSrc);
 
 	// console.log(QuestionnaireObj.languages[0].country);
 	// console.log(QuestionnaireObj.languages[0].language);

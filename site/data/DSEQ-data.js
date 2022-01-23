@@ -1,6 +1,7 @@
 var DSEQObj = {
 	shortName: "DSEQ",
 	fullName: "Driving Self-Efficacy Questionnaire",
+	image: "driver.jpg",
 	about: "Driving Self-Efficacy Questionnaire (DSEQ; Taubman – Ben-Ari, 2008) contains 17 items tapping the subjective perceptions of self-efficacy as a driver in various driving contexts (e.g., when tired, in a new car, in bad weather, in the dark). Participants are asked to rate the extent they feel they act efficaciously when driving in each of the situations described, using a 7-point scale ranging from 1 (not at all) to 7 (very much). Responses to all items are averaged to arrive at a total score, with higher scores reflecting a higher perception of self-efficacy.",
 	languages: [
 		{

@@ -1,6 +1,7 @@
 var SDCFObj = {
 	shortName: "SDCF",
 	fullName: "Safe Driving Climate among Friends",
+	image: "fist_bump.png",
 	about: "Safe Driving Climate among Friends (SDCaF) was developed to detect positive and negative aspects of driving with friends among young drivers (Guggenheim & Taubman – Ben-Ari, 2018). It consists of 19 items relating to four dimensions of the effect of peers on driving behavior: (1) Pressure from friends while driving (5 items), that is, the driver’s perception that their friends tend to push them to drive recklessly or break the law; (2) Social costs of driving with friends (5 items), i.e., the driver’s feelings of being uncomfortable, exhausted, or even scared when driving with friends; (3) Communication about driving among friends (5 items), that is, open discourse among friends on driving issues, including their own driving; and (4) Shared commitment to safe driving (4 items), or a responsible attitude toward road safety that is shared by the driver and their friends in the car. \nYoung drivers indicate the degree to which they agree with the statement in each item on a 5-point Likert scale ranging from 1 (completely disagree) to 5 (completely agree).  A score is calculated for each of the four dimensions by averaging the responses to the relevant items, with higher scores indicating a higher level of the specific dimension.",
 	languages: [
 		{

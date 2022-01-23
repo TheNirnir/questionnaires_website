@@ -1,6 +1,7 @@
 var RDHSObj = {
 	shortName: "RDHS",
-	fullName: "Reckless Driving Habits Scale ",
+	fullName: "Reckless Driving Habits Scale",
+	image: "traffic_sign.png",
 	about: "Reckless Driving Habits Scale (Taubman - Ben-Ari et al., 2004) is a 14-item (with a shorter 8-item version) inventory examining the self-reported frequency of reckless driving. Each item presents a typical driving behavior that is a traffic violation and might endanger the life or well-being of the driver, passengers, pedestrians, and/or occupants of other cars (e.g. running a red light, not stopping at a stop sign, making a high speed turn). Participants are asked to indicate how often they drive in the described manner on a 6-point scale ranging from 1 (never) to 6 (always). Responses to all items are averaged to produce a total score, with higher scores reflecting a higher frequency of reckless driving.",
 	languages: [
 		{

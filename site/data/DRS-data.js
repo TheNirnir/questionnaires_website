@@ -1,6 +1,7 @@
 var DRSObj = {
 	shortName: "DRS",
 	fullName: "Driving as Relevant to Self-esteem",
+	image: "woman_driver/5759.jpg",
 	about: "Driving as Relevant to Self-Esteem (DRS; Taubman – Ben-Ari, Florian, & Mikulincer, 1999) is a 15-item self-report scale assessing the perceived costs and benefits of driving to self-esteem. Seven of the items tap positive implications of driving (e.g., “driving allows me to feel worthy”) and 8 tap negative implications (e.g., “driving brings out negative aspects of myself”). Participants are asked to indicate the degree to which they agree with the statement in each item on a scale ranging from 1 (not at all) to 7 (very much). A single score is calculated by averaging the responses to all items, with higher scores indicating a higher perception of driving as relevant to self-esteem.",
 	languages: [
 		{

@@ -474,6 +474,17 @@ h3.questionnaire-part-title {
 	font-family: 'Raleway', sans-serif;
 }
 
+#about-container img {
+	/*width: 30%;*/
+	float: left;
+	padding: 3px 10px 1px 0;
+	border-radius: 500px;
+}
+
+#about-container div {
+	/*margin: auto 0 auto 0;*/
+}
+
 #language-title {
 	margin-top: 0;
 }
@@ -607,16 +618,25 @@ h3.questionnaire-part-title {
 	#publications-container {
 		float: none;
 	}
+
 	#nir-logo {
 		width: 20%;
+	}
+
+	#about-container img {
+		width: 30%;
 	}
 }
 /*********************end of extra small devices only*********************/
 
 /*********************small devices only*********************/
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 991px) {
 	#nir-logo {
 		width: 14%;
+	}
+
+	#about-container img {
+		width: 25%;
 	}
 }
 /*********************end of small devices only*********************/
@@ -624,7 +644,11 @@ h3.questionnaire-part-title {
 /*********************medium devices only*********************/
 @media (min-width: 992px) and (max-width: 1199px) {
 	#nir-logo {
-		width: 12%;
+		width: 9%;
+	}
+
+	#about-container img {
+		width: 20%;
 	}
 }
 /*********************end of medium devices only*********************/
@@ -632,7 +656,11 @@ h3.questionnaire-part-title {
 /*********************large devices only*********************/
 @media (min-width: 1200px) {
 	#nir-logo {
-		width: 10%;
+		width: 6%;
+	}
+
+	#about-container img {
+		width: 17%;
 	}
 }
 /*********************end of large devices only*********************/
@@ -643,6 +671,10 @@ h3.questionnaire-part-title {
 		top: -20px;
 		padding: 15px;
 		font-size: 1.5em;
+	}
+
+	#about-container img {
+		width: 50%;
 	}
 }
 
