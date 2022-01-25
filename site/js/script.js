@@ -20,9 +20,23 @@ function sizesSet(event) {
 	for (var i = 0; i < document.querySelectorAll('.language-flag').length; i++) {
 		document.getElementsByClassName('language-flag')[i].style.height = document.getElementsByClassName('language-name')[i].offsetHeight + "px";
 	}
+
+	var maxButton = 0;
 	for (var i = 0; i < document.querySelectorAll('.button').length; i++) {
-		document.getElementsByClassName('button')[i].style.height = document.getElementsByClassName('button')[3].offsetHeight + "px";
+		document.getElementsByClassName('button')[i].style.height = "auto";
 	}
+	for (var i = 0; i < document.querySelectorAll('.button').length; i++) {
+		if (document.getElementsByClassName('button')[i].offsetHeight > document.getElementsByClassName('button')[maxButton].offsetHeight) {
+			maxButton = i;
+		}
+	}
+	for (var i = 0; i < document.querySelectorAll('.button').length; i++) {
+		document.getElementsByClassName('button')[i].style.height = document.getElementsByClassName('button')[maxButton].offsetHeight + "px";
+	}
+
+	// for (var i = 0; i < document.querySelectorAll('.button').length; i++) {
+	// 	document.getElementsByClassName('button')[i].style.height = document.getElementsByClassName('button')[9].offsetHeight + "px";
+	// }
 	// document.getElementById("footer").style.marginTop = document.getElementById("footer").offsetHeight + "px";
 	// document.getElementById("main-content").style.marginBottom = document.getElementById("footer").offsetHeight + "px";
 	// document.getElementsByTagName("html")[0].style.paddingBottom = document.getElementById("footer").offsetHeight + "px";
