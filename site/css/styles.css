@@ -70,16 +70,17 @@ header {
 	left: 0;
 	top: 2px;
 	margin-left: 0;
+	z-index: 5;
 }
 
 .facebook-logo {
 	width: 50px;
 	position: absolute;
-	z-index: 2;
 	top: 0;
 	left: 0;
 	transform: rotate(0);
 	transition: all .2s ease;
+	z-index: 6;
 }
 
 .facebook-logo:hover, .facebook-logo:active {
@@ -113,6 +114,7 @@ header {
 	top: 0;
 	left: 0;
 	transition: width .2s, top .2s, height .2s;
+	z-index: 5;
 }
 
 .small-button-logo:hover, .small-button-logo:active {
