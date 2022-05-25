@@ -15,7 +15,7 @@ var PRDSObj = {
 	],
 	publications: [
 		"Eherenfreund-Hager, A., & Taubman – Ben-Ari, O. (2016). The effect of affect induction and personal variables on young drivers’ willingness to drive recklessly. Transportation Research Part F: Traffic Psychology and Behaviour, 41, Part A, 138-149. https://doi.org/10.1016/j.trf.2016.06.008",
-		"Greitemeyer, T., Kastenmüller, A., & Fischer, P. (2013). Romantic motives and risk-taking: an evolutionary approach. Journal of Risk Research, 16(1), 19-38. https://doi.org/10.1080/13669877.2012.713388",
+		"Greitemeyer, T., Kastenm&#252;ller, A., & Fischer, P. (2013). Romantic motives and risk-taking: an evolutionary approach. Journal of Risk Research, 16(1), 19-38. https://doi.org/10.1080/13669877.2012.713388",
 		"Guggenheim, N., Taubman – Ben-Ari, O., & Ben-Artzi, E. (2020). The contribution of driving with friends to young drivers’ intention to take risks: An expansion of the theory of planned behavior. Accident Analysis & Prevention, 139, 105489. https://doi.org/10.1016/j.aap.2020.105489",
 		"Kraha, A., & Boals, A. (2011). Parents and vehicle purchases for their children: A surprising source of weight bias. Obesity, 19(3), 541-545. https://doi.org/10.1038/oby.2010.192",
 		"Taubman – Ben-Ari, O. (2012). The effects of positive emotion priming on self-reported reckless driving. Accident Analysis & Prevention, 45, 718-725. https://doi.org/10.1016/j.aap.2011.09.039",
